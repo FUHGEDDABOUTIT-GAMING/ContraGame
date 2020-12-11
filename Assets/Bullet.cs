@@ -9,11 +9,16 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public int damage = 30;
     public Rigidbody2D rb;
+    private GameObject obj;
+    private Animator animator;
 
     public GameObject impactEffect;
     // Start is called before the first frame update
     void Start()
+    
     {
+        animator = GetComponent<Animator>();
+        
         if (Input.GetKey(KeyCode.W))
             rb.velocity = transform.up * speed;
         else
@@ -21,17 +26,23 @@ public class Bullet : MonoBehaviour
 
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+          //  animator.Play("Impact");
+           obj=Instantiate(impactEffect, transform.position, transform.rotation);
+           
         }
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+       // Destroy(obj);
         Destroy(gameObject);
-        Destroy(impactEffect);
+        
+      
     }
 
     // Update is called once per frame
