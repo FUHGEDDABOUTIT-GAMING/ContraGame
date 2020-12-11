@@ -61,6 +61,7 @@
     <Compile Include="Assets\ControlPlayer2D.cs" />
     <Compile Include="Assets\Destroy.cs" />
     <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\Jumper_Enemy.cs" />
     <Compile Include="Assets\Scripts\CameraFollow2D.cs" />
     <Compile Include="Assets\Weapon.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

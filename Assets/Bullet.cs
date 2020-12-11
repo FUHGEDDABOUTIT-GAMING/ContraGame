@@ -31,11 +31,19 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
+        Jumper_Enemy jumper = hitInfo.GetComponent<Jumper_Enemy>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
           //  animator.Play("Impact");
            obj=Instantiate(impactEffect, transform.position, transform.rotation);
+           
+        }
+        if (jumper != null)
+        {
+            jumper.TakeDamage(damage);
+            //  animator.Play("Impact");
+            obj=Instantiate(impactEffect, transform.position, transform.rotation);
            
         }
 
