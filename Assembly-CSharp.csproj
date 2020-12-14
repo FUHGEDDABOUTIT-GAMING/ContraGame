@@ -63,6 +63,7 @@
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Jumper_Enemy.cs" />
     <Compile Include="Assets\Scripts\CameraFollow2D.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Weapon.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/polo/Documents/Unity_projects/contraGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
