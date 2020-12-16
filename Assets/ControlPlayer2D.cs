@@ -119,7 +119,7 @@ public class ControlPlayer2D : MonoBehaviour
     
         }
         
-        
+        /*
         else if (Input.GetKey(KeyCode.W))
         {
 
@@ -152,7 +152,7 @@ public class ControlPlayer2D : MonoBehaviour
                 
             
         }
-        
+        */
         
         else
         {
