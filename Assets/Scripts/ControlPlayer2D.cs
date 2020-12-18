@@ -177,14 +177,16 @@ public class ControlPlayer2D : MonoBehaviour
         }
 
         
-
+        //sets health text on screen
         healthTMP.text = "health: " + health;
         
     }
 
    void Hurt()
-   {    health -= 1;
-       //health -= 0.25f;
+   {   
+       //lowers health 
+       health -= 1;
+       
 
         
 
@@ -201,38 +203,32 @@ public class ControlPlayer2D : MonoBehaviour
        }
        else
        {
-           StartCoroutine(hurtBlinker());
-           //animator.Play("Player_Damaged");
+            StartCoroutine(DoBlinks(.05f, 0.2f));
+
        }
    }
 
-   IEnumerator hurtBlinker()
-   {
-       //ignore collision btwe enmeies and players
-       int enemyLayer = LayerMask.NameToLayer("Enemy");
-       int playerLayer = LayerMask.NameToLayer("Player");
-       Physics2D.IgnoreLayerCollision(enemyLayer,playerLayer);
-       foreach(Collider2D collider in myCols)
-       {
-           
-           collider.enabled = false;
-           collider.enabled = true;
-           
-       }
-       
-       // start animation
-       animator.SetLayerWeight(1,1);
-       
-       // wait
-       yield return new WaitForSeconds(invinsibleTimeafterHurt);
-       
-       //re enable
-       Physics2D.IgnoreLayerCollision(enemyLayer,playerLayer,false);
-       animator.SetLayerWeight(1,0);
-       
-   }
+    //blinking animation
+     IEnumerator DoBlinks(float duration, float blinkTime) {
+         while (duration > 0f) {
+                 duration -= Time.deltaTime;
+      
+            //toggle renderer
+            GetComponent<Renderer>().enabled = !GetComponent<Renderer>().enabled;
+      
+            //wait for a bit
+            yield return new WaitForSeconds(blinkTime);
+         }
+  
+         //make sure renderer is enabled when we exit
+         GetComponent<Renderer>().enabled = true;
+     }
 
-   
+
+
+
+
+
     private void OnCollisionEnter2D(Collision2D col){
 
         if(col.gameObject.CompareTag("enemy")){
