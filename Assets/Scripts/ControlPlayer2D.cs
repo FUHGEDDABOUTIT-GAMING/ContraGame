@@ -34,7 +34,8 @@ public class ControlPlayer2D : MonoBehaviour
     
     //combat
 
-    public static int health = 3;
+    [SerializeField]
+    public static int health = 5;
 
     private float invinsibleTimeafterHurt =1;
     private bool movementDisabled;
