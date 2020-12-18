@@ -3719,6 +3719,8 @@ GameObject:
   - component: {fileID: 1847071683}
   - component: {fileID: 1847071685}
   - component: {fileID: 1847071684}
+  - component: {fileID: 1847071687}
+  - component: {fileID: 1847071686}
   m_Layer: 9
   m_Name: Map
   m_TagString: Floor
@@ -3766,7 +3768,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 26.983467, y: -5.6147156}
+  m_Offset: {x: 27.640038, y: -5.5539293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3777,7 +3779,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.684723, y: 0.35536194}
+  m_Size: {x: 20.678665, y: 0.47693443}
   m_EdgeRadius: 0
 --- !u!61 &1847071678
 BoxCollider2D:
@@ -4200,6 +4202,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1718941, y: 1.325542}
   m_EdgeRadius: 0
+--- !u!61 &1847071686
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847071674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: fd09d8f3753f24940ac0be84c6c08a1a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 37.895615, y: -2.8546526}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.7912445, y: 5.836451}
+  m_EdgeRadius: 0
+--- !u!61 &1847071687
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847071674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: fd09d8f3753f24940ac0be84c6c08a1a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 17.311367, y: -3.6668916}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9400501, y: 4.2360735}
+  m_EdgeRadius: 0
 --- !u!1 &1856987016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4419,7 +4473,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: e78d20eaca30e40febab5c2eb0298769, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.395
   m_Pitch: 1
   Loop: 1
   Mute: 0
