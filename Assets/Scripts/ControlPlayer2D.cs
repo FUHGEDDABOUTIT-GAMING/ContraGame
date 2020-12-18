@@ -26,7 +26,7 @@ public class ControlPlayer2D : MonoBehaviour
     private Transform groundCheck;
     
     [SerializeField]
-    private TextMeshProUGUI lives;
+    private TextMeshProUGUI healthTMP;
     
 
     [SerializeField]
@@ -34,7 +34,7 @@ public class ControlPlayer2D : MonoBehaviour
     
     //combat
 
-    private int health = 3;
+    public static int health = 3;
 
     private float invinsibleTimeafterHurt =1;
     private bool movementDisabled;
@@ -178,13 +178,13 @@ public class ControlPlayer2D : MonoBehaviour
 
         
 
-        lives.text = "Lives: " + health;
+        healthTMP.text = "health: " + health;
         
     }
 
    void Hurt()
-   {
-       health--;
+   {    health -= 1;
+       //health -= 0.25f;
 
         
 
@@ -196,7 +196,7 @@ public class ControlPlayer2D : MonoBehaviour
            gameOver.gameObject.SetActive(true);
            movementDisabled = true;
            Debug.Log(itemCount);
-           lives.text = "Lives: " + 0;
+           healthTMP.text = "Health: " + 0;
 
        }
        else
