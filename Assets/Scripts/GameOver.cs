@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public void playAgain(){
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
     public void menu(){
