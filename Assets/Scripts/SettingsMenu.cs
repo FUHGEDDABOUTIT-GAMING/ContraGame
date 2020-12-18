@@ -9,4 +9,9 @@ public class SettingsMenu: MonoBehaviour
     {
         SceneManager.LoadScene(gameSceneName);
     }
+    
+    public void closeAbout()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
 }
