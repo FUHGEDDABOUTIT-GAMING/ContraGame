@@ -199,7 +199,7 @@ public class ControlPlayer2D : MonoBehaviour
            gameOver.gameObject.SetActive(true);
            movementDisabled = true;
            Debug.Log(itemCount);
-           healthTMP.text = "Health: " + 0;
+           healthTMP.text = "health: " + 0;
 
        }
        else
