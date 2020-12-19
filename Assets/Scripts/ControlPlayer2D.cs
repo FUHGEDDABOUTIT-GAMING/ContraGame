@@ -31,6 +31,9 @@ public class ControlPlayer2D : MonoBehaviour
 
     [SerializeField]
     private GameOver gameOver;
+
+    [SerializeField]
+    private PauseMenu pauseMenu;
     
     //combat
 
@@ -40,6 +43,8 @@ public class ControlPlayer2D : MonoBehaviour
     private float invinsibleTimeafterHurt =1;
     private bool movementDisabled;
     public int itemCount;
+
+    private bool paused;
     
     Collider2D[] myCols;
     // Start is called before the first frame update
@@ -59,10 +64,26 @@ public class ControlPlayer2D : MonoBehaviour
     void Update()
     {
         
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            if(!paused){
+                pauseMenu.gameObject.SetActive(true);
+                movementDisabled = true;
+                paused = true;
+            }
+            else{
+                pauseMenu.gameObject.SetActive(false);
+                movementDisabled = false;
+                paused = false;
+            }
+            Debug.Log("Escaped pressed");
+        }
+
     }
 
     private void FixedUpdate()
     {
+
+
         
         if (movementDisabled)
             return;
