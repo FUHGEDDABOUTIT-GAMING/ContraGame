@@ -25,7 +25,7 @@ December 18 , 2020
 ```
 Game Hosted At : https://fuhgeddaboutit-gaming.github.io/ContraGame/Run%20&%20Gun/
 ```
-<a href="https://fuhgeddaboutit-gaming.github.io/ContraGame/Run%20&%20Gun/" Game>
+<a href="https://fuhgeddaboutit-gaming.github.io/ContraGame/Run%20&%20Gun/">Run & Gun Game</a>
 ## Game Narrative
 
 **I. Main Character: Alex Stark**
