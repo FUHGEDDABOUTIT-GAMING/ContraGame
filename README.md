@@ -91,6 +91,7 @@ The player can control Alex’s movements using the following keys:
 - _D key_ : forward movement
 - _A key_ : backward movement
 - _B_ : shooting
+- _SpaceBar_ : jump
 
 **II. Assets and Attributes**
 
