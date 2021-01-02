@@ -21,8 +21,14 @@ Michael Fertig
 ```
 December 18 , 2020
 ```
-
+## Controls:
 ```
+The player can control Alex’s movements using the following keys:
+
+- _D key_ : forward movement
+- _A key_ : backward movement
+- _B_ : shooting
+- _SpaceBar_ : jump
 
 ```
 ## Game Hosted At: <a href="https://fuhgeddaboutit-gaming.github.io/ContraGame/Run%20&%20Gun/">Run & Gun Game</a>
