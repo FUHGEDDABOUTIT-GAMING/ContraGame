@@ -1,12 +1,8 @@
 x
 
-# Game Design
+# Game Design Document
 
-# Document
-
-## Run and
-
-## Gun
+## Run and Gun
 
 ```
 Fuhgeddaboutit Gaming
@@ -32,6 +28,7 @@ The player can control Alex’s movements using the following keys:
 
 ```
 ## Game Hosted At: <a href="https://fuhgeddaboutit-gaming.github.io/ContraGame/Run%20&%20Gun/">Run & Gun Game</a>
+
 ## Game Narrative
 
 **I. Main Character: Alex Stark**
